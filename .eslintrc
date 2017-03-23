@@ -1,0 +1,6 @@
+{
+  "extends": "ebay-common/legacy",
+  "env": {
+      "browser": true
+  }
+}

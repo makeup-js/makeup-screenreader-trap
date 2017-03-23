@@ -1,0 +1,6 @@
+{
+  "extends": "ebay-common/node6",
+  "env": {
+      "browser": true
+  }
+}

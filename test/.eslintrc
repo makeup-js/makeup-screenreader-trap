@@ -1,0 +1,10 @@
+{
+  "extends": "ebay-common/legacy",
+  "env": {
+      "browser": true,
+      "jasmine": true
+  },
+  "rules": {
+
+  }
+}
