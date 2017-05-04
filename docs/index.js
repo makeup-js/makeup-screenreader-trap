@@ -1,6 +1,6 @@
 var screenreaderTrap = require('../index.js');
 
-document.querySelectorAll('.trap').forEach(function (item) {
+Array.prototype.slice.call(document.querySelectorAll('.trap')).forEach(function (item) {
   item.addEventListener('click', function () {
     if (this.getAttribute('aria-pressed') === 'true') {
       screenreaderTrap.untrap(this);

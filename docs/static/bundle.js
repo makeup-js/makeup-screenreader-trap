@@ -784,7 +784,7 @@ module.exports = {
 });
 $_mod.def("/makeup-screenreader-trap$0.0.2/docs/index", function(require, exports, module, __filename, __dirname) { var screenreaderTrap = require('/makeup-screenreader-trap$0.0.2/index'/*'../index.js'*/);
 
-document.querySelectorAll('.trap').forEach(function (item) {
+Array.prototype.slice.call(document.querySelectorAll('.trap')).forEach(function (item) {
   item.addEventListener('click', function () {
     if (this.getAttribute('aria-pressed') === 'true') {
       screenreaderTrap.untrap(this);
