@@ -591,7 +591,7 @@ https://github.com/joyent/node/blob/master/lib/module.js
     }
 })();
 
-$_mod.def("/makeup-screenreader-trap$0.0.1/util", function(require, exports, module, __filename, __dirname) { 'use strict';
+$_mod.def("/makeup-screenreader-trap$0.0.2/util", function(require, exports, module, __filename, __dirname) { 'use strict';
 
 // filter function for ancestor elements
 
@@ -680,9 +680,9 @@ module.exports = {
 };
 
 });
-$_mod.def("/makeup-screenreader-trap$0.0.1/index", function(require, exports, module, __filename, __dirname) { 'use strict';
+$_mod.def("/makeup-screenreader-trap$0.0.2/index", function(require, exports, module, __filename, __dirname) { 'use strict';
 
-var util = require('/makeup-screenreader-trap$0.0.1/util'/*'./util.js'*/);
+var util = require('/makeup-screenreader-trap$0.0.2/util'/*'./util.js'*/);
 
 // the main landmark
 var mainEl = void 0;
@@ -782,7 +782,7 @@ module.exports = {
 };
 
 });
-$_mod.def("/makeup-screenreader-trap$0.0.1/docs/index", function(require, exports, module, __filename, __dirname) { var screenreaderTrap = require('/makeup-screenreader-trap$0.0.1/index'/*'../index.js'*/);
+$_mod.def("/makeup-screenreader-trap$0.0.2/docs/index", function(require, exports, module, __filename, __dirname) { var screenreaderTrap = require('/makeup-screenreader-trap$0.0.2/index'/*'../index.js'*/);
 
 document.querySelectorAll('.trap').forEach(function (item) {
   item.addEventListener('click', function () {
@@ -807,4 +807,4 @@ document.querySelectorAll('.trap').forEach(function (item) {
 });
 
 });
-$_mod.run("/makeup-screenreader-trap$0.0.1/docs/index");
+$_mod.run("/makeup-screenreader-trap$0.0.2/docs/index");
