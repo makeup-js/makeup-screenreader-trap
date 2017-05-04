@@ -61,7 +61,9 @@ function trap(el) {
   dirtyObjects.forEach(item => dirtyAttribute(item));
 
   // let observers know the screenreader is now trapped
-  trappedEl.dispatchEvent(new CustomEvent('screenreaderTrap'));
+  const event = document.createEvent('Event');
+  event.initEvent('screenreaderTrap', false, true);
+  trappedEl.dispatchEvent(event);
 }
 
 function untrap() {
@@ -77,7 +79,9 @@ function untrap() {
     }
 
     // let observers know the screenreader is now untrapped
-    trappedEl.dispatchEvent(new CustomEvent('screenreaderUntrap'));
+    const event = document.createEvent('Event');
+    event.initEvent('screenreaderUntrap', false, true);
+    trappedEl.dispatchEvent(event);
 
     trappedEl = null;
   }
