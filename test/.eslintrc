@@ -1,5 +1,5 @@
 {
-  "extends": "ebay-common/legacy",
+  "extends": "ebay/legacy",
   "env": {
       "browser": true,
       "jasmine": true

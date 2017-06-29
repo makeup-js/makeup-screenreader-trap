@@ -11,7 +11,7 @@
     "test": "npm run transpile && npm run lasso:test && npm run clean && karma start --autoWatch false --singleRun true",
     "prepublish": "npm run clean && npm run lint && npm run test && npm run build",
     "build": "npm run transpile && npm run lasso",
-    "fix": "eslint src/index.js src/util.js --fix",
+    "fix": "eslint src/index.js src/util.js test/index.js --fix",
     "lint": "eslint src/index.js src/util.js > lint.txt",
     "lasso": "lasso require-run:./docs/index.js --out docs/static --inject-into docs/index.html --name bundle && npm run clean:lasso",
     "lasso:test": "lasso require-run:./test/index.js --name bundle-test --out test/static --config ./test/lasso-config.json && npm run clean:lasso",
