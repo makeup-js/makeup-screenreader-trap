@@ -3,7 +3,7 @@
   "description": "Restricts screen reader virtual cursor to a single subtree in the DOM",
   "version": "0.0.2",
   "main": "src/index.js",
-  "repository": "https://github.com/ianmcburnie/makeup-screenreader-trap.git",
+  "repository": "https://github.com/makeup-js/makeup-screenreader-trap.git",
   "author": "Ian McBurnie <ianmcburnie@hotmail.com>",
   "license": "MIT",
   "scripts": {

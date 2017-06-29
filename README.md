@@ -1,10 +1,10 @@
 # makeup-screenreader-trap
 
 <p>
-    <a href="https://travis-ci.org/ianmcburnie/makeup-screenreader-trap"><img src="https://api.travis-ci.org/ianmcburnie/makeup-screenreader-trap.svg?branch=master" alt="Build Status" /></a>
-    <a href='https://coveralls.io/github/ianmcburnie/jquery-screenreader-trap?branch=master'><img src='https://coveralls.io/repos/ianmcburnie/makeup-screenreader-trap/badge.svg?branch=master&service=github' alt='Coverage Status' /></a>
-    <a href="https://david-dm.org/ianmcburnie/makeup-screenreader-trap"><img src="https://david-dm.org/ianmcburnie/makeup-screenreader-trap.svg" alt="Dependency status" /></a>
-    <a href="https://david-dm.org/ianmcburnie/makeup-screenreader-trap#info=devDependencies"><img src="https://david-dm.org/ianmcburnie/makeup-screenreader-trap/dev-status.svg" alt="devDependency status" /></a>
+    <a href="https://travis-ci.org/makeup-js/makeup-screenreader-trap"><img src="https://api.travis-ci.org/makeup-js/makeup-screenreader-trap.svg?branch=master" alt="Build Status" /></a>
+    <a href='https://coveralls.io/github/makeup-js/jquery-screenreader-trap?branch=master'><img src='https://coveralls.io/repos/makeup-js/makeup-screenreader-trap/badge.svg?branch=master&service=github' alt='Coverage Status' /></a>
+    <a href="https://david-dm.org/makeup-js/makeup-screenreader-trap"><img src="https://david-dm.org/makeup-js/makeup-screenreader-trap.svg" alt="Dependency status" /></a>
+    <a href="https://david-dm.org/makeup-js/makeup-screenreader-trap#info=devDependencies"><img src="https://david-dm.org/makeup-js/makeup-screenreader-trap/dev-status.svg" alt="devDependency status" /></a>
 </p>
 
 A vanilla JavaScript port of <a href="https://github.com/ianmcburnie/jquery-screenreader-trap">jquery-screenreader-trap</a>.
@@ -67,8 +67,8 @@ Each test run will generate the following reports:
 
 ## CI Build
 
-https://travis-ci.org/ianmcburnie/makeup-screenreader-trap
+https://travis-ci.org/makeup-js/makeup-screenreader-trap
 
 ## Code Coverage
 
-https://coveralls.io/github/ianmcburnie/makeup-screenreader-trap?branch=master
+https://coveralls.io/github/makeup-js/makeup-screenreader-trap?branch=master
