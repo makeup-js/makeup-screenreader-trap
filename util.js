@@ -3,85 +3,85 @@
 // filter function for ancestor elements
 
 var filterAncestor = function filterAncestor(item) {
-  return item.nodeType === 1 && item.tagName.toLowerCase() !== 'body' && item.tagName.toLowerCase() !== 'html';
+    return item.nodeType === 1 && item.tagName.toLowerCase() !== 'body' && item.tagName.toLowerCase() !== 'html';
 };
 
 // filter function for sibling elements
 var filterSibling = function filterSibling(item) {
-  return item.nodeType === 1 && item.tagName.toLowerCase() !== 'script';
+    return item.nodeType === 1 && item.tagName.toLowerCase() !== 'script';
 };
 
 // reducer to flatten arrays
 var flattenArrays = function flattenArrays(a, b) {
-  return a.concat(b);
+    return a.concat(b);
 };
-
-// returns all sibling element nodes of given element
-function getSiblings(el) {
-  var allSiblings = getPreviousSiblings(el).concat(getNextSiblings(el));
-
-  return allSiblings.filter(filterSibling);
-}
 
 // recursive function to get previous sibling nodes of given element
 function getPreviousSiblings(el) {
-  var siblings = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : [];
+    var siblings = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : [];
 
-  var previousSibling = el.previousSibling;
+    var previousSibling = el.previousSibling;
 
-  if (!previousSibling) {
-    return siblings;
-  }
+    if (!previousSibling) {
+        return siblings;
+    }
 
-  siblings.push(previousSibling);
+    siblings.push(previousSibling);
 
-  return getPreviousSiblings(previousSibling, siblings);
+    return getPreviousSiblings(previousSibling, siblings);
 }
 
 // recursive function to get next sibling nodes of given element
 function getNextSiblings(el) {
-  var siblings = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : [];
+    var siblings = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : [];
 
-  var nextSibling = el.nextSibling;
+    var nextSibling = el.nextSibling;
 
-  if (!nextSibling) {
-    return siblings;
-  }
+    if (!nextSibling) {
+        return siblings;
+    }
 
-  siblings.push(nextSibling);
+    siblings.push(nextSibling);
 
-  return getNextSiblings(nextSibling, siblings);
+    return getNextSiblings(nextSibling, siblings);
 }
 
-// get ancestor nodes of given element
-function getAncestors(el) {
-  return getAllAncestors(el).filter(filterAncestor);
+// returns all sibling element nodes of given element
+function getSiblings(el) {
+    var allSiblings = getPreviousSiblings(el).concat(getNextSiblings(el));
+
+    return allSiblings.filter(filterSibling);
 }
 
 // recursive function to get all ancestor nodes of given element
 function getAllAncestors(el) {
-  var ancestors = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : [];
+    var ancestors = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : [];
 
-  var nextAncestor = el.parentNode;
+    var nextAncestor = el.parentNode;
 
-  if (!nextAncestor) {
-    return ancestors;
-  }
+    if (!nextAncestor) {
+        return ancestors;
+    }
 
-  ancestors.push(nextAncestor);
+    ancestors.push(nextAncestor);
 
-  return getAllAncestors(nextAncestor, ancestors);
+    return getAllAncestors(nextAncestor, ancestors);
+}
+
+// get ancestor nodes of given element
+function getAncestors(el) {
+    return getAllAncestors(el).filter(filterAncestor);
 }
 
 // get siblings of ancestors (i.e. aunts and uncles) of given el
 function getSiblingsOfAncestors(el) {
-  return getAncestors(el).map(function (item) {
-    return getSiblings(item);
-  }).reduce(flattenArrays, []);
+    return getAncestors(el).map(function (item) {
+        return getSiblings(item);
+    }).reduce(flattenArrays, []);
 }
 
 module.exports = {
-  getSiblings: getSiblings,
-  getAncestors: getAncestors,
-  getSiblingsOfAncestors: getSiblingsOfAncestors
+    getSiblings: getSiblings,
+    getAncestors: getAncestors,
+    getSiblingsOfAncestors: getSiblingsOfAncestors
 };

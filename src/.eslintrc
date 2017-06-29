@@ -1,5 +1,5 @@
 {
-  "extends": "ebay-common/node6",
+  "extends": "ebay",
   "env": {
       "browser": true
   }
