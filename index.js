@@ -46,9 +46,7 @@ function untrap() {
         }
 
         // let observers know the screenreader is now untrapped
-        var event = document.createEvent('Event');
-        event.initEvent('screenreaderUntrap', false, true);
-        trappedEl.dispatchEvent(event);
+        trappedEl.dispatchEvent(new CustomEvent('screenreaderUntrap', { bubbles: true }));
 
         trappedEl = null;
     }
@@ -89,9 +87,7 @@ function trap(el) {
     });
 
     // let observers know the screenreader is now trapped
-    var event = document.createEvent('Event');
-    event.initEvent('screenreaderTrap', false, true);
-    trappedEl.dispatchEvent(event);
+    trappedEl.dispatchEvent(new CustomEvent('screenreaderTrap', { bubbles: true }));
 }
 
 module.exports = {
