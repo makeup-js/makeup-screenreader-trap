@@ -51,5 +51,11 @@
   },
   "dependencies": {
     "custom-event-polyfill": "~0.3"
-  }
+  },
+  "files": [
+    "browser.json",
+    "index.js",
+    "util.js",
+    "yarn.lock"
+  ]
 }
