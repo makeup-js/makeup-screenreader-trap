@@ -1,9 +1,9 @@
 {
-  "extends": "ebay/legacy",
+  "extends": "ebay",
   "env": {
     "browser": true
   },
   "rules": {
-    "no-console": "allow"
+    "prefer-arrow-callback": 0
   }
 }
