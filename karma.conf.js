@@ -16,6 +16,7 @@ module.exports = function (config) {
     // list of files / patterns to load in the browser
     files: [
       'test/static/lasso-client.js',
+      'test/static/custom-event-polyfill.js',
       'test/static/bundle-module.js',
       'test/static/bundle-test.js',
       'test/ready.js'

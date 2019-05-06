@@ -44,11 +44,11 @@
     "lasso-cli": "^2",
     "onchange": "^5",
     "parallelshell": "^3",
-    "puppeteer": "^1.2.0",
+    "puppeteer": "^1",
     "rimraf": "^2"
   },
   "dependencies": {
-    "custom-event-polyfill": "~0.3"
+    "custom-event-polyfill": "^1"
   },
   "files": [
     "browser.json",

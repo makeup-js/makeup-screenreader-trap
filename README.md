@@ -40,9 +40,9 @@ yarn add makeup-screenreader-trap
 * screenreaderTrap : fired by trapped element when screenreader trap is activated
 * screenreaderUntrap : fired by trapped element when screenreader trap is deactivated
 
-## Dependencies
+## Polyfills
 
-* None
+* [custom-event-polyfill](https://github.com/krambuhl/custom-event-polyfill)
 
 ## Development
 
@@ -52,11 +52,6 @@ yarn add makeup-screenreader-trap
 * `npm run fix`
 * `npm run build`
 * `npm run clean`
-
-The following hooks exist, and do not need to be invoked manually:
-
-* `npm prepublish` cleans, lints, tests and builds on every `npm publish` command
-* `pre-commit` cleans, lints, tests and builds on every `git commit` command
 
 ## Test Reports
 

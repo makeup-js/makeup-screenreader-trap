@@ -1,10 +1,10 @@
 {
   "extends": "ebay/legacy",
   "env": {
-      "browser": true,
-      "jasmine": true
+    "browser": true,
+    "jasmine": true
   },
   "rules": {
-
+    "no-var": 0
   }
 }

@@ -9,6 +9,12 @@
       ]
     },
     {
+      "name": "custom-event-polyfill",
+      "dependencies": [
+        "require: custom-event-polyfill"
+      ]
+    },
+    {
       "name": "bundle-module",
       "dependencies": [
         "require: ../index.js"

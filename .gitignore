@@ -12,6 +12,7 @@ lint.txt
 # Lasso output
 .cache
 build
+test/static/custom-event-polyfill.js
 test/static/bundle-test.js
 test/static/lasso-client.js
 
