@@ -591,7 +591,7 @@ https://github.com/joyent/node/blob/master/lib/module.js
     }
 })();
 
-$_mod.installed("makeup-screenreader-trap$0.0.5", "nodelist-foreach-polyfill", "1.2.0");
+$_mod.installed("makeup-screenreader-trap$0.1.0", "nodelist-foreach-polyfill", "1.2.0");
 $_mod.main("/nodelist-foreach-polyfill$1.2.0", "");
 $_mod.def("/nodelist-foreach-polyfill$1.2.0/index", function(require, exports, module, __filename, __dirname) { if (window.NodeList && !NodeList.prototype.forEach) {
     NodeList.prototype.forEach = function (callback, thisArg) {
@@ -604,7 +604,7 @@ $_mod.def("/nodelist-foreach-polyfill$1.2.0/index", function(require, exports, m
 
 });
 $_mod.run("/nodelist-foreach-polyfill$1.2.0/index");
-$_mod.installed("makeup-screenreader-trap$0.0.5", "custom-event-polyfill", "1.0.7");
+$_mod.installed("makeup-screenreader-trap$0.1.0", "custom-event-polyfill", "1.0.7");
 $_mod.main("/custom-event-polyfill$1.0.7", "polyfill");
 $_mod.def("/custom-event-polyfill$1.0.7/polyfill", function(require, exports, module, __filename, __dirname) { // Polyfill for creating CustomEvents on IE9/10/11
 
@@ -662,7 +662,7 @@ $_mod.def("/custom-event-polyfill$1.0.7/polyfill", function(require, exports, mo
 
 });
 $_mod.run("/custom-event-polyfill$1.0.7/polyfill");
-$_mod.def("/makeup-screenreader-trap$0.0.5/util", function(require, exports, module, __filename, __dirname) { 'use strict'; // filter function for ancestor elements
+$_mod.def("/makeup-screenreader-trap$0.1.0/util", function(require, exports, module, __filename, __dirname) { 'use strict'; // filter function for ancestor elements
 
 var filterAncestor = function filterAncestor(item) {
   return item.nodeType === 1 && item.tagName.toLowerCase() !== 'body' && item.tagName.toLowerCase() !== 'html';
@@ -742,9 +742,9 @@ module.exports = {
 };
 
 });
-$_mod.def("/makeup-screenreader-trap$0.0.5/index", function(require, exports, module, __filename, __dirname) { 'use strict';
+$_mod.def("/makeup-screenreader-trap$0.1.0/index", function(require, exports, module, __filename, __dirname) { 'use strict';
 
-var util = require('/makeup-screenreader-trap$0.0.5/util'/*'./util.js'*/); // the main landmark
+var util = require('/makeup-screenreader-trap$0.1.0/util'/*'./util.js'*/); // the main landmark
 
 
 var mainEl; // the element that will be trapped
@@ -833,10 +833,10 @@ module.exports = {
 };
 
 });
-$_mod.def("/makeup-screenreader-trap$0.0.5/docs/index", function(require, exports, module, __filename, __dirname) { "use strict";
+$_mod.def("/makeup-screenreader-trap$0.1.0/docs/index", function(require, exports, module, __filename, __dirname) { "use strict";
 
 /* eslint-disable no-console */
-var screenreaderTrap = require('/makeup-screenreader-trap$0.0.5/index'/*'../index.js'*/);
+var screenreaderTrap = require('/makeup-screenreader-trap$0.1.0/index'/*'../index.js'*/);
 
 document.querySelectorAll('.trap').forEach(function (item) {
   item.addEventListener('click', function () {
@@ -865,4 +865,4 @@ document.addEventListener('screenreaderUntrap', function (e) {
 });
 
 });
-$_mod.run("/makeup-screenreader-trap$0.0.5/docs/index");
+$_mod.run("/makeup-screenreader-trap$0.1.0/docs/index");

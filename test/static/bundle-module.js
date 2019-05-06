@@ -1,5 +1,5 @@
-$_mod.installed("makeup-screenreader-trap$0.0.5", "custom-event-polyfill", "1.0.7");
-$_mod.def("/makeup-screenreader-trap$0.0.5/util", function(require, exports, module, __filename, __dirname) { 'use strict'; // filter function for ancestor elements
+$_mod.installed("makeup-screenreader-trap$0.1.0", "custom-event-polyfill", "1.0.7");
+$_mod.def("/makeup-screenreader-trap$0.1.0/util", function(require, exports, module, __filename, __dirname) { 'use strict'; // filter function for ancestor elements
 
 var filterAncestor = function filterAncestor(item) {
   return item.nodeType === 1 && item.tagName.toLowerCase() !== 'body' && item.tagName.toLowerCase() !== 'html';
@@ -79,9 +79,9 @@ module.exports = {
 };
 
 });
-$_mod.def("/makeup-screenreader-trap$0.0.5/index", function(require, exports, module, __filename, __dirname) { 'use strict';
+$_mod.def("/makeup-screenreader-trap$0.1.0/index", function(require, exports, module, __filename, __dirname) { 'use strict';
 
-var util = require('/makeup-screenreader-trap$0.0.5/util'/*'./util.js'*/); // the main landmark
+var util = require('/makeup-screenreader-trap$0.1.0/util'/*'./util.js'*/); // the main landmark
 
 
 var mainEl; // the element that will be trapped
