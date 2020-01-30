@@ -1,5 +1,5 @@
-var screenreaderTrap = require('../index.js');
-var util = require('../util.js');
+var screenreaderTrap = require('../src/index.js');
+var util = require('../src/util.js');
 var testData = require('./data.js');
 var trapEl;
 var onTrap;

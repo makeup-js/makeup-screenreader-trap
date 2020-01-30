@@ -5,6 +5,7 @@
     "jasmine": true
   },
   "rules": {
-    "no-var": 0
+    "no-var": 0,
+    "prefer-arrow-callback": 0
   }
 }

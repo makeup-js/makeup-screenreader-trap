@@ -1,6 +1,7 @@
-/* eslint-disable no-console */
+// requires NodeList.forEach polyfill for IE
+require('nodelist-foreach-polyfill');
 
-const screenreaderTrap = require('../index.js');
+const screenreaderTrap = require('../../index.js');
 
 document.querySelectorAll('.trap').forEach(function(item) {
     item.addEventListener('click', function() {
