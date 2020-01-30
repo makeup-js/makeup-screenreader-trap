@@ -1,4 +1,4 @@
-// requires NodeList.forEach polyfill for IE
+// NodeList.forEach polyfill for IE
 require('nodelist-foreach-polyfill');
 
 const screenreaderTrap = require('../../index.js');

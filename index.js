@@ -1,4 +1,7 @@
-'use strict';
+'use strict'; // requires CustomEvent polyfill for IE
+// https://developer.mozilla.org/en-US/docs/Web/API/CustomEvent/CustomEvent
+
+var CustomEvent = require('custom-event');
 
 var util = require('./util.js'); // the main landmark
 
